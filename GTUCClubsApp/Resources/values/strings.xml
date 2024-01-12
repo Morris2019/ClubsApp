@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="app_name">GTUCClubsApp</string>
+    <string name="action_settings">Sign Out</string>
+
+    <string name="memberfirstname">First Name</string>
+    <string name="memberlastname">Last Name</string>
+    <string name="memberUsername">User Name</string>
+    <string name="memberUsernPhone">Contact Number</string>
+    <string name="memberUsern">Contact Number</string>
+    <string name="MemberRegister">Register</string>
+    <string name="MemberEmail">E-mail</string>
+    <string name="MemberPasscode">Password</string>
+    <string name="MemberEmailreset">Email Address</string>
+    <string name="MemberresetText">Please enter your email address in the box below</string>
+    <string name="Memberpicture">Member Profile Picture</string>
+    <string name="message">Enter Message</string>
+    <string name="postbutton">Post Announcement</string>
+    <string name="cardPostImages">AnnouncementImagge</string>
+    <string name="Comment">Add Comment</string>
+
+    <string name="channel_name">Club App Notification</string>
+  <string name="channel_description">Events and Announcements</string>
+</resources>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ClubsRelativePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/ShowmodelImage"
+            android:src="@drawable/ClubImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:contentDescription=""/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GTUC Clubs"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"/>
+         </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_centerInParent="true">
+        
+          <android.support.design.widget.TextInputLayout
+            android:layout_below="@+id/UserEmailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            android:hint="User Email"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorLightDark"
+            android:id="@+id/clubsuserEmail" />
+        </android.support.design.widget.TextInputLayout>
+                
+          <android.support.design.widget.TextInputLayout
+            android:layout_below="@+id/UserEmailText"
+            android:id="@+id/clubsuserPassText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="User Password"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/colorLightDark"
+            android:id="@+id/clubsuserpassword" />
+         </android.support.design.widget.TextInputLayout>
+                        
+        <TextView
+            android:id="@+id/clubsforgotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:textColor="@color/colorLightDark"
+            android:text="Forgot Password ?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp" />
+        <Button
+            android:text="Sign In"
+            android:id="@+id/clubssigninbut"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:background="@color/colorLightDark"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="left"
+            android:textColor="#F5F5F5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorLightDark"/>
+       <TextView
+            android:id="@+id/clubsSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:textColor="@color/colorLightDark"
+            android:text="Register"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/ClubProgress"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:theme="@style/CircularProgres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar" />
+</RelativeLayout>

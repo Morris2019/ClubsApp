@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+          <android.support.v7.widget.Toolbar
+		        android:id="@+id/searchtoolbar"
+		        android:layout_height="wrap_content"
+		        android:layout_width="match_parent"
+		        android:background="?android:attr/colorPrimary"
+		        android:minHeight="?android:attr/actionBarSize"
+		        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		        android:elevation="4dp" >
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+			<EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/SearchText"
+                android:layout_weight="1"
+                android:hint ="Search"
+                android:maxLength="30"
+                    android:inputType="textAutoComplete"
+                android:layout_centerVertical="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/UserSendFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:tint="@android:color/black"
+                android:layout_alignLeft="@+id/EdittextShape"
+			    android:src="@drawable/sharp_search_black_24dp"
+                app:fabSize="mini"
+                android:layout_marginLeft="10dp"/>
+                
+            </LinearLayout>
+
+		</android.support.v7.widget.Toolbar>
+
+          <android.support.v7.widget.RecyclerView
+                android:id="@+id/searchrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="?android:attr/actionBarSize"/>
+
+
+         
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+  

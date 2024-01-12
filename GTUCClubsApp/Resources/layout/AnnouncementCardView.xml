@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+<android.support.v7.widget.CardView
+                
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="horizontal|vertical"
+                android:fadingEdgeLength="2dp"
+                android:fitsSystemWindows="true"
+                app:cardBackgroundColor="@color/black">
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+     <ImageView
+            android:id="@+id/MemberAnnImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@drawable/clubimage"
+            android:scaleType="centerCrop" />
+
+         <TextView
+                    android:id="@+id/MemberAnnouncement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:text="Title"/>
+        <TextView
+                    android:id="@+id/MemberVenues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:text="Venue"/>
+        
+     </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+              
+  </LinearLayout>

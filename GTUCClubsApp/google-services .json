@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "678155026412",
+    "firebase_url": "https://gtucclubsapp.firebaseio.com",
+    "project_id": "gtucclubsapp",
+    "storage_bucket": "gtucclubsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678155026412:android:14b4c7270e6a73de03cac9",
+        "android_client_info": {
+          "package_name": "fenries.com.gtucclubsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678155026412-48a7pi4ufcku3m905ch4svbbhamqnbev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "fenries.com.gtucclubsapp",
+            "certificate_hash": "c7b39f5fa13eda29d1b536409399e69b7a7230ba"
+          }
+        },
+        {
+          "client_id": "678155026412-5ut1s7an1vv84k87e5hcod5onu2i8fga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9n4_8AK5SmQgOVXDUgQeDw4NQVtpkQIE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678155026412-5ut1s7an1vv84k87e5hcod5onu2i8fga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
